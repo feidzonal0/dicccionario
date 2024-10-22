@@ -1,0 +1,92 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #222;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #f39c12;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#result {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.word {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #f39c12;
+    transition: color 0.3s;
+}
+
+.word:hover {
+    color: #e67e22;
+}
+
+.definition {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #ecf0f1;
+}
+
+#result.hidden {
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+#result.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    input {
+        font-size: 16px;
+    }
+
+    .word {
+        font-size: 1.5rem;
+    }
+
+    .definition {
+        font-size: 1rem;
+    }
+}
